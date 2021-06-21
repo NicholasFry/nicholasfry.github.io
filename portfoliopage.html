@@ -12,10 +12,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
     <!-- <link rel="stylesheet" type="text/css" href="css/portfoliopage.css"/> -->
   </head>
   <!-- the body contains the actual document that will be shown to the user -->
@@ -23,18 +20,22 @@
     <div class="container">
     <!-- Page Content goes here -->
     <nav>
-        <div class="nav-wrapper purple lighten-2">
+        <div class="nav-wrapper purple lighten-2" id="home">
           <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
           <a href="#!" class="brand-logo-trigger">Geothermal Scientist and Data Whisperer</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="blue accent-2 active btn"><a href="sass.html">Home</a></li>
-            <li class="blue accent-2 active btn"><a href="badges.html">Projects</a></li>
-            <li class="blue accent-2 active btn"><a href="collapsible.html">Contact</a></li>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="blue accent-2 active btn"><a href="#home">Home</a></li>
+            <li class="blue accent-2 active btn"><a href="#projects">Projects</a></li>
+            <li class="blue accent-2 active btn"><a href="#contact">Contact</a></li>
           </ul>
         </div>
-    </nav>
-          
+    </nav>    
+      <ul class="sidenav" id="mobile-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>  
         <div class="divider"></div>
         <div class="section">
         <h5>About Me</h5>
@@ -42,7 +43,7 @@
         </div>
         <div class="divider"></div>
         <div class="section">
-        <h5>Projects</h5>
+        <h5 id="projects">Projects</h5>
         <p>Recently, I extended my research in rural geothermal district heating systems to a group project with students and faculty at the University of North Dakota. For five months we were able to investigate the energy demand of the community of Mandaree, the geothermal resource that lies beneath the town, and the potential of converting oil wells for such a system. With my personal expertise on interactions between a geothermal reservoir and the demand of a surface energy system, I tied together the inputs from a diverse team of geoscientists and engineers. This was part of a US Department of Energy collegiate competition. Our comprehensive plan beat out 15 other teams from across the United States. I hope it inspires rural counties and states to consider more active participation in the energy transition. </p>
             <div class="row">
                 <div class="col s12 m9">
@@ -75,7 +76,7 @@
             </div>
         </div>         
     </div>
-    <footer class="page-footer purple lighten-3">
+    <footer class="page-footer purple lighten-3" id="contact">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
@@ -100,5 +101,14 @@
           </div>
         </div>
       </footer>
+      <!-- Compiled and minified JavaScript, this should be put in at the end of the page to avoid slow loading-->
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+      <!-- https://youtu.be/43uIJw5Nj5s -->
+      <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+      </script>
   </body>
 </html>
