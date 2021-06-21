@@ -102,12 +102,12 @@
         </div>
       </footer>
       <!-- Compiled and minified JavaScript, this should be put in at the end of the page to avoid slow loading-->
-      <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
       <!-- https://youtu.be/43uIJw5Nj5s -->
       <script>
-        $(document).ready(function(){
-          $('.sidenav').sidenav();
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, {}); // {} was options in example code 
         });
       </script>
   </body>
