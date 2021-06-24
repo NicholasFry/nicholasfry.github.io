@@ -43,6 +43,12 @@
         <h5>About Me</h5>
         <p>I am a thought follower. My expertise lies in my ability to gather everyone else's work into cohesive, comprehendable products. I like working with reservoir engineers, mechanical engineers, geomechanical specialists, geophysicists, geologists, and other geoscientists to bring their thoughts to life. My formal training is wide ranging, including: heating and cooling hydraulic design, district energy systems, applied data science, geothermal systems, thermodynamics of power cycles, energy geology, geothermal well drilling and design, through economics, environmental assessments, and natural resource law. As a professional master of none, I find myself often carrying other people's messages to those that matter. I look forward to making a difference in the geothermal energy sector.</p>
         </div>
+        <div class="parallax-container">
+          <div class="parallax"><img src="Headshot_Fry_N.svg"></div>
+          <div class="row left">
+            <h5 class="white-text header col s12 light">Nicholas Fry</h5>
+          </div>
+        </div>
         <div class="divider"></div>
         <div class="section">
         <h5 id="projects">Projects</h5>
@@ -85,6 +91,7 @@
               <h5 class="white-text">Let's talk.</h5>
               <p class="grey-text text-lighten-4">Feel free to be in touch. I am happy to entertain a conversation, consulting, or a job proposal. <a href="nicholas.fry.1@und.edu" class="black-text">nicholas.fry.1@und.edu</a></p>
               <a href="https://www.linkedin.com/in/nicholas-f-aa12561a4/" class="blue darken-4 waves-effect waves-light btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/nicholasfry" class="orange darken-4 waves-effect waves-light btn"><i class="fab fa-github-square"></i> Github</a>
             </div>
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Portfolio Links</h5>
@@ -111,6 +118,10 @@
         document.addEventListener('DOMContentLoaded', function() {
           var elems = document.querySelectorAll('.sidenav');
           var instances = M.Sidenav.init(elems, {}); // {} was options in example code 
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.parallax');
+          var instances = M.Parallax.init(elems, {});
         });
       </script>
   </body>

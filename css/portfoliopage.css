@@ -2,6 +2,9 @@
     padding-top: .75rem;
     padding-right: .5rem;
 }
+.parallax-container {
+    height: 450px;
+  }
 @media (min-width: 890px) {
     .brand-logo-trigger {
         font-weight: 600;
