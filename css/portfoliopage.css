@@ -8,6 +8,10 @@
 .domain::before {
     content: "\0040";
 }
+#picture1 {
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+}
 #simages {
     max-height: 180px;
 }
